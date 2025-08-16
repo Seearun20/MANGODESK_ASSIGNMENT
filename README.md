@@ -34,7 +34,23 @@ In a second terminal window, run the following command to start the Next.js fron
 npm run dev
 ```
 
-Your application should now be running and accessible at [http://localhost:9002](http://localhost:9002).
+Your application should now be running and accessible at `http://localhost:9002`.
+
+## Exporting the Project
+
+To download your project code to your local computer, you can use Git and a provider like GitHub.
+
+1.  **Initialize Git:** In the terminal, run `git init` to create a new Git repository.
+2.  **Create a GitHub Repository:** Go to [GitHub](https://github.com/new) and create a new, empty repository. Do not add a README or license file from the GitHub UI.
+3.  **Link to GitHub:** Follow the instructions on GitHub under "...or push an existing repository from the command line" to link your project and push your code. The commands will look something like this:
+    ```bash
+    git remote add origin <your-github-repo-url>
+    git branch -M main
+    git add .
+    git commit -m "Initial commit"
+    git push -u origin main
+    ```
+4.  **Clone to Local Machine:** On your local PC, run `git clone <your-github-repo-url>` to download the project.
 
 ## Available Scripts
 
