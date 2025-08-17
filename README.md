@@ -1,62 +1,78 @@
-# Firebase Studio
+MangoDesk Assignment
 
-This is a Next.js starter project for Firebase Studio. It includes a simple UI for summarizing text using AI.
+An AI-powered meeting assistant built with Next.js and Genkit AI.
+It allows you to input meeting transcripts, generate concise summaries, and even draft follow-up emails automatically.
 
-## Getting Started
+✨ Features
 
-To get started with this project, you'll need to have [Node.js](https://nodejs.org/) (version 18 or later) installed on your system.
+📋 Paste transcripts and highlight key action items
 
-### Installation
+🤖 AI-generated summaries for quick understanding
 
-First, install the necessary project dependencies by running the following command in your terminal:
+📧 Auto-generate emails for absent members or follow-ups
 
-```bash
+📤 Share summaries instantly with your team
+
+🎨 Modern, responsive UI with a dark theme
+
+🚀 Getting Started
+Prerequisites
+
+Node.js (v18 or later)
+
+npm (comes with Node.js)
+
+Installation
+
+Clone the repository and install dependencies:
+
+git clone https://github.com/Seearun20/MANGODESK_ASSIGNMENT.git
+cd MANGODESK_ASSIGNMENT
 npm install
-```
 
-### Running the Development Server
+Running the Development Server
 
-This project requires two separate processes to run at the same time: the Next.js development server for the frontend and the Genkit AI server for the backend.
+Run both the Genkit AI server and the Next.js frontend:
 
-**1. Start the Genkit AI Server**
-
-In your first terminal window, run the following command to start the Genkit server. This will watch for any changes you make to your AI-related files.
-
-```bash
+1. Start the Genkit AI Server
 npm run genkit:watch
-```
 
-**2. Start the Next.js Server**
-
-In a second terminal window, run the following command to start the Next.js frontend application.
-
-```bash
+2. Start the Next.js Server
 npm run dev
-```
 
-Your application should now be running and accessible at `http://localhost:9002`.
 
-## Exporting the Project
+Now visit 👉 http://localhost:9002
 
-To download your project code to your local computer, you can use Git and a provider like GitHub.
+📸 Demo
+Input Transcript & Custom Prompt
 
-1.  **Initialize Git:** In the terminal, run `git init` to create a new Git repository.
-2.  **Create a GitHub Repository:** Go to [GitHub](https://github.com/new) and create a new, empty repository. Do not add a README or license file from the GitHub UI.
-3.  **Link to GitHub:** Follow the instructions on GitHub under "...or push an existing repository from the command line" to link your project and push your code. The commands will look something like this:
-    ```bash
-    git remote add origin <your-github-repo-url>
-    git branch -M main
-    git add .
-    git commit -m "Initial commit"
-    git push -u origin main
-    ```
-4.  **Clone to Local Machine:** On your local PC, run `git clone <your-github-repo-url>` to download the project.
+AI-Generated Email Summary
 
-## Available Scripts
+📦 Deployment
 
--   `npm run dev`: Starts the Next.js development server on port 9002.
--   `npm run genkit:watch`: Starts the Genkit AI server in watch mode.
--   `npm run build`: Creates a production-ready build of the application.
--   `npm run start`: Starts the production server.
--   `npm run lint`: Runs the linter to check for code quality issues.
--   `npm run typecheck`: Runs the TypeScript compiler to check for type errors.
+For production build:
+
+npm run build
+npm run start
+
+📜 Available Scripts
+
+npm run dev → Start Next.js dev server on port 9002
+
+npm run genkit:watch → Start Genkit AI server in watch mode
+
+npm run build → Production build
+
+npm run start → Start production server
+
+npm run lint → Run ESLint
+
+npm run typecheck → TypeScript checks
+
+🤝 Contributing
+
+Feel free to fork this repo, improve it, and submit a pull request.
+
+📄 License
+
+This project is licensed under the MIT License.
